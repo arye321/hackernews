@@ -10,7 +10,7 @@
 
     <div class="content">
       <form id="myForm" >
-        <input id="textbox" placeholder="https://www.youtube.com/c/channel_name/videos" size="70">
+        <input id="textbox" placeholder="https://news.ycombinator.com/item?id=123456" size="70">
         <br>
         <br>
         <input type="submit" value="      Open      " id="myButton" onclick="return loginUser()">
@@ -23,7 +23,7 @@
   <script>
 
        function loginUser() {
-         window.open(document.getElementById('textbox').value+"?sort=p",'_blank').focus();
+         window.open(document.getElementById('textbox').value+"&p=2",'_blank').focus();
     };
 
     </script>
